@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Survey Form - FCC</title>
+</head>
+<body>
+    <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We want to known you better</p>
+    </header>
+    <div id="main">
+    <form id="survey-form" method="POST">
+
+
+        <label for="name" id="name-label">Name:</label><br><br><input type="text" id="name" placeholder="Enter your Name" maxlength="50" required><br><br>
+        <label for="email" id="email-label">E-mail:</label><br><br><input type="email" id="email" placeholder="Enter your e-mail" required><br><br>
+        <label for="number" id="number-label">Age:</label><br><br><input type="number" id="number" placeholder="Age" min="10" max="100"><br><br>
+
+        <label for="dropdown">How did you find us?</label><br><br>
+            <select id="dropdown" name="dropdown">
+                <option value="Google">Google</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Twitter">Other (pinterest, linkedin, youtube)</option>
+              </select><br><br>
+        
+
+        <label id="group_radio">Gender:</label><br><br>
+        <input type="radio" value="male" id="male" name="group_radio"><label for="male">Male</label><br>
+        <input type="radio" value="female" id="female" name="group_radio" checked><label for="female">Female</label><br>
+        <input type="radio" value="not_disclose" id="not_disclose" name="group_radio"><label for="not_disclose">Prefer not to disclose</label><br><br>
+
+        <hr>
+
+            <br>
+                <label>Choose your favorite sport:</label><br><br>
+                <input type="checkbox" id="Basketball" name="Basketball" value="Basketball">
+                <label for="Basketball"> Basketball</label><br>
+                <input type="checkbox" id="Baseball" name="Baseball" value="Baseball" checked>
+                <label for="Baseball"> Baseball</label><br>
+                <input type="checkbox" id="Americanfootball" name="Americanfootball" value="Americanfootball">
+                <label for="Americanfootball"> American football</label><br>
+                <input type="checkbox" id="Soccer" name="Soccer" value="Soccer">
+                <label for="Soccer"> Soccer</label><br><br>
+                <label for="message">Message:</label><br><br><textarea placeholder="Enter comments or suggestions" rows="6" cols="50" id="message"></textarea><br><br>
+                <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
